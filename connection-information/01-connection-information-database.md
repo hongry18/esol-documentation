@@ -12,9 +12,10 @@ DB Service, Schedule Service 등 서비스에서 사용될 DBMS 연결 정보 �
 - [x] SQLIte
 - [x] Tibero
 
-## 2. 새로운 DB 연결 생성
+## 2. 사용법
 ### 2.1 생성
-Menu > 연결정보 > DB 연결 선택 후 생성 버튼 선택
+Menu > 연결정보 > DB 연결 > 생성  
+![new item](./images/01-connection-information-database-01.png)
 
 ### 2.2 속성
 | 입력값 | 설명 |
