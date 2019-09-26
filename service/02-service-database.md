@@ -17,8 +17,8 @@ Menu > 서비스 > DB Service > 생성
 ![New Item](./images/02-service-database-02.png)
 
 ### 2.2 속성
-| 입력값 | 설명 |
-|:---:|:---|
+| 구분 | 설명 |
+|:---:|---|
 | DB 서비스 ID | 고유한 ID (중복불가 , 알파벳 숫자 , 특수문자('_')  30자이내) {host}/svc/db/{userName}/{DB서비스ID} 로 호출되어지는 서비스로 생성된다. |
 | DB 서비스명 | 이름, 혹은 설명을 입력, 작업자가 구분하기 위해 사용 |
 | 그룹 | 작업자가 구분하기 위해 사용 |
@@ -36,8 +36,8 @@ Database작업은 쿼리의 실행 순서도 중요하므로 순번을 이동 �
 ![Create Query Button](./images/02-service-database-03.png)
 ![Create Query](./images/02-service-database-04.png)
 
-| 입력값 | 설명 |
-|:---:|:---|
+| 구분 | 설명 |
+|:---:|---|
 | Query명 | 작업자 쿼리를 구분하기 위해 사용, 예)LIST, ADD, MOD, DEL 등 |
 | DB 연결 ID | 해당 쿼리가 사용할 DB Pool '7. POOL유형'에서 '개별'로 선택한 경우만 작동된다.<br />'전체'일 경우는 '4. DB연결 ID'에서 선택된 pool을 사용 한다. |
 | Query 유형 | Single : 단일 값(record)만 Array의 첫번째 record 사용한다.<br />예) Query유형이 SELECT 인경우는 필수, INSERT UPDATE DELETE인 경우도 1개만 사용할 경우<br />Array  : Array 전체를 사용<br />예) INSERT, UPDATE, DELETE인 경우 복수의 값을 입력할 경우 사용 |
@@ -104,8 +104,8 @@ DB Service 입력 값에 대한 검증(validation)을 한다.
 'query-sample001' 기준으로 NAME , COL_NAME
 - 검증구분
 
-|구분|내용|
-|:-:|-|
+| 구분 | 내용 |
+|:---:|---|
 | 정규식 | 입력값을 정규식으로 검증한다. |
 | 일반 | 항목유형(변수타입,숫자,문자 제한등) , 최소길이(크기) , 최대길이(크기) 를 검증 |
 | 목록 | 목록에 있는 값인지만 판단, ORDER BY의 정렬부분의 치환변수 값을 검증 할때는 ‘ASC’와’DESC’를 목록에 입력 |
@@ -126,7 +126,7 @@ POST만 지원 하고 클라이언트 사이드에서 ajax로 호출 할 때 변
 ### 3.1 Javascript
 예약된 객체
 
-| 이름 | 타입 | 설명 |
+| 구분 | 타입 | 설명 |
 |:---:|---|---|
 | data |  Object | input 변수 담은 객체 |
 | session | Object | session 변수 담은 객체 |
@@ -208,7 +208,7 @@ Input Data
 ### 3.2 JAVA
 예약된 객체
 
-| 이름 | 타입 | 설명 |
+| 구분 | 타입 | 설명 |
 |:---:|---|---|
 | data |  net.sf.json.JSONObject | input 변수 담은 JSON객체 |
 | session | HashMap<String,String> | session 변수 담은 객체 |
