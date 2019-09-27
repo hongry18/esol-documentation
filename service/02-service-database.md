@@ -11,6 +11,7 @@ DB Service(쿼리)를 작성(등록)하면 Web상에 호출가능한 서비스(P
 
 ![Image Of Architecture](./images/02-service-database-01.png)
 
+---
 ## 2. 사용법
 ### 2.1 생성
 Menu > 서비스 > DB Service > 생성  
@@ -122,6 +123,7 @@ POST만 지원 하고 클라이언트 사이드에서 ajax로 호출 할 때 변
 
 ![Service Test](./images/02-service-database-07.png)
 
+---
 ## 3. Dynamic Query
 ### 3.1 Javascript
 예약된 객체
