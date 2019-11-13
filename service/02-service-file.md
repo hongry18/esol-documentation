@@ -1,11 +1,11 @@
 # File Service
 
-## 1.. File Service 란
+## 1. File Service 란
 ### 1.1. 정의
 File 업로드 서비스
 
 ---
-## 2.. 사용법
+## 2. 사용법
 ### 2.1. 생성
 
 Menu > 서비스 > File Service > 생성

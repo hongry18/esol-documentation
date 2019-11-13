@@ -1,6 +1,6 @@
 # DB Service
 
-## 1.. DB Service 란
+## 1. DB Service 란
 ### 1.1. 정의
 기본적으로 SELECT, INSERT, UPDATE, DELETE 쿼리를 수행한다.  
 전통적인 MVC패턴의 controller 와 model 부분을 담당한다.
@@ -12,7 +12,7 @@ DB Service(쿼리)를 작성(등록)하면 Web상에 호출가능한 서비스(P
 ![Image Of Architecture](./images/02-service-database-01.png)
 
 ---
-## 2.. 사용법
+## 2. 사용법
 ### 2.1. 생성
 Menu > 서비스 > DB Service > 생성  
 ![New Item](./images/02-service-database-02.png)
@@ -124,7 +124,7 @@ POST만 지원 하고 클라이언트 사이드에서 ajax로 호출 할 때 변
 ![Service Test](./images/02-service-database-07.png)
 
 ---
-## 3.. Dynamic Query
+## 3. Dynamic Query
 ### 3.1. Javascript
 예약된 객체
 
@@ -289,7 +289,7 @@ Input Data
 }}
 ```
 
-## 4.. Tip
+## 4. Tip
 
 ### 4.1. input Key 중복사용
 DB Service는 여러개의 쿼리를 한번에 실행 할 수 있다.

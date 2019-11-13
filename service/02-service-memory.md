@@ -1,10 +1,10 @@
 # Memory Service
-## 1.. Memory Service 란
+## 1. Memory Service 란
 ### 1.1. 정의
 DB 입력 없이 메모리에 데이터를 올려 빠르게 조회하는 기능
 
 ---
-## 2.. 사용법
+## 2. 사용법
 ### 2.1. 생성
 menu > 서비스 > Memory Data > 생성
 

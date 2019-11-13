@@ -1,11 +1,11 @@
 # Custom Service
-## 1.. Custom Service 란
+## 1. Custom Service 란
 ### 1.1. 정의
  - DB 서비스만으로 처리가 불가능한 기능들에 대해 직접 java 코딩하여 로직을 구현한 서비스 호출을 할 수 있는 서비스다.
  - class 파일의 경로는 보통 './project/WEB-INF/classes' 이다. (변경 가능)
 
 ---
-## 2.. 사용법
+## 2. 사용법
 ### 2.1. 생성
 menu > 서비스 > Custom Service > 생성
 
@@ -38,7 +38,7 @@ menu > 서비스 > Custom Service > 생성
 ![test response](./images/02-service-custom-04.png)
 
 ---
-## 3.. Custom JAVA
+## 3. Custom JAVA
 ### 3.1. 기본 구조
 
 HttpServletRequest, HttpServletResponse, HashMap 인자값을 가진 execute 메소드가 필요하다

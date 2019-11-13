@@ -1,6 +1,6 @@
 # DB 연결
 
-## 1.. DB 연결 이란
+## 1. DB 연결 이란
 ### 1.1. 정의
 DB Service, Schedule Service 등 서비스에서 사용될 DBMS 연결 정보 생성
 
@@ -13,7 +13,7 @@ DB Service, Schedule Service 등 서비스에서 사용될 DBMS 연결 정보 �
 - [ ] PostgreSQL
 - [ ] CUBRID
 
-## 2.. 사용법
+## 2. 사용법
 ### 2.1. 생성
 Menu > 연결정보 > DB 연결 > 생성  
 ![new item](./images/01-connection-information-database-01.png)

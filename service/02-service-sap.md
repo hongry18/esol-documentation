@@ -1,10 +1,10 @@
 # SAP Service
-## 1.. SAP Service 란
+## 1. SAP Service 란
 ### 1.1. 정의
 특정 양식의 파일을 업로드하면 Database에 Table로 삽입하는 기능
 
 ---
-## 2.. 사용법
+## 2. 사용법
 ### 2.1. SAP 서비스 생성
 menu > 서비스 > SAP Service > 생성
 
