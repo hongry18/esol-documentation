@@ -62,11 +62,11 @@ Content-Type : application/json
 
 - 성공
 
-httpclient 사용시 _JWT_,_JWT_TIME_를 Request의 Cookie에 담아서 호출하면 인증을 통과 합니다.
+httpclient 사용시 _JWT_, _JWT_TIME_를 Request의 Cookie에 담아서 호출하면 인증을 통과 합니다.
 
 ```json
 {
-    sucess:true,
+    success:true,
     message:"",
     _JWT_:"암호화된.문자열.입니다"
     _JWT_TIME_:"_JWT_의 시간"
@@ -77,7 +77,7 @@ httpclient 사용시 _JWT_,_JWT_TIME_를 Request의 Cookie에 담아서 호출�
 
 ```json
 {
-    sucess:false,
+    success:false,
     message:"Access Fail(invalid access id or password)"
 }
 ```
