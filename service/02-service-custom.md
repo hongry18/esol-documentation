@@ -29,7 +29,7 @@ menu > 서비스 > Custom Service > 생성
 ##### 2.1.1.2. Java Edit Helper
 | 이름 | 설명 |
 |:---:|---|
-| Java Sample Code | sample 목록중 선택하면 해당 항목의 견본이 우축 Java editor에 입력된 |
+| Java Sample Code | sample 목록중 선택하면 해당 항목의 견본이 우축 Java editor에 입력된다 |
 | Referenced Libraries | 사용가능한 library 목록 |
 
 ##### 2.1.1.3. java editor
