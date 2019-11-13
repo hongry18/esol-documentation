@@ -3,6 +3,7 @@
 ## 목차
 * [연결정보](./connection-information)
     * [DB 연결](./connection-information/01-connection-information-database.md) 
+    * [SAP 연결](./connection-information/01-connection-information-sap.md) 
 * [서비스](./service) 
     * [DB Service](./service/02-service-database.md) 
     * [Custom Service](./service/02-service-custom.md) 
