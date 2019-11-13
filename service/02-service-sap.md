@@ -29,7 +29,7 @@ menu > 서비스 > SAP Service > 생성
 함수명란에 함수기입 후 검색하여 나온 결과물 중 사용 할 아이템 선택(더블클릭)
 ![Service Create](./images/02-service-sap-05.png)
 
-#### 2.1.1 검색된 함수(RFC) 구조 확인
+#### 2.1.3. 검색된 함수(RFC) 구조 확인
 상단의 맵핑정보 클릭 후 함수구조 확인 가능
 ![Service Create](./images/02-service-sap-06.png)
 
