@@ -1,14 +1,14 @@
 # 접속 관리
-## 1. 접속 관리란
+## 1.. 접속 관리란
 서비스중 __인증체크: 사용__ 하는 서비스에 대 서비스 권한을 만들었다면 외부에서 접근이 가능하게 TOKEN을 발급 받기위한 접속 관리 생성
 
-## 2. 사용법
-### 2.1 생성
+## 2.. 사용법
+### 2.1. 생성
 Menu > 관리도구 > 접속 관리 > 생성
 
 ![item Create](./images/03-management-tools-access-01.png)
 
-### 2.2 속성
+### 2.2. 속성
 
 | 구분 | 설명 |
 |:---:|---|
@@ -20,11 +20,11 @@ Menu > 관리도구 > 접속 관리 > 생성
 
 ![item Attribute](./images/03-management-tools-access-02.png)
 
-### 2.3 TOKEN 발급 방법
+### 2.3. TOKEN 발급 방법
 
 Token 발급 URL: {host}/accessProc.do
 
-#### 2.3.1 요청
+#### 2.3.1. 요청
 
 ADD_MAP 설명  
 1. 선택사항 이고 세션변수 처럼 사용 가능 String만 가능  
@@ -57,7 +57,7 @@ WHERE   ID={'$UID$'}
 > ADD_MAP의 UID(ACL01)값이 입력된다.  
 쿼리문에 세션변수를 사용하듯이 사용 가능
 
-#### 2.3.1 응답
+#### 2.3.1. 응답
 Content-Type : application/json
 
 - 성공

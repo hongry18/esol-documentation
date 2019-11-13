@@ -1,10 +1,10 @@
 # DB 연결
 
-## 1. DB 연결 이란
-### 1.1 정의
+## 1.. DB 연결 이란
+### 1.1. 정의
 DB Service, Schedule Service 등 서비스에서 사용될 DBMS 연결 정보 생성
 
-### 1.2 지원하는 DBMS
+### 1.2. 지원하는 DBMS
 - [x] Oracle
 - [x] MSSql
 - [x] MYSql
@@ -13,12 +13,12 @@ DB Service, Schedule Service 등 서비스에서 사용될 DBMS 연결 정보 �
 - [ ] PostgreSQL
 - [ ] CUBRID
 
-## 2. 사용법
-### 2.1 생성
+## 2.. 사용법
+### 2.1. 생성
 Menu > 연결정보 > DB 연결 > 생성  
 ![new item](./images/01-connection-information-database-01.png)
 
-### 2.2 속성
+### 2.2. 속성
 | 입력값 | 설명 |
 |:---:|:---:|
 | DB 연결 ID | 고유식별자, DB Service등에서 DB 연결 ID 선택시 사용된다. 중복불가능, 20자 이내, 영어숫자 underscore(_)사용 가능 |

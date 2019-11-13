@@ -1,16 +1,16 @@
 # Proxy Service
-## 1. Proxy Service 란
-### 1.1 정의
+## 1.. Proxy Service 란
+### 1.1. 정의
 Proxy Service란 대리라는 의미로 직접 통신할수 없는 두점 사이에서 통신을 할 경우 그 사이에 있는 중계기로서 대리로 통신을 수행하는 기능을 Proxy라 한다.
 
 ---
-## 2. 사용법
-### 2.1 생성
+## 2.. 사용법
+### 2.1. 생성
 menu > 서비스 > File To Data > 생성
 
 ![Service Create](./images/02-service-proxy-01.png)
 
-### 2.2 속성
+### 2.2. 속성
 
 | 구분 | 설명 |
 |:---:|---|
@@ -33,7 +33,7 @@ menu > 서비스 > File To Data > 생성
 
 ![Attribute](./images/02-service-proxy-02.png)
 
-#### 2.2.1 Load Balancing
+#### 2.2.1. Load Balancing
 
 | 구분 | 설명 |
 |:---:|---|
@@ -41,7 +41,7 @@ menu > 서비스 > File To Data > 생성
 | hash | 사용자 ip를 hasing하여 분배하는데, 사용자는 항상 같은 서버로 연결을 보장하는 기법 |
 | least | 호출 대상서버가 복수개일때 연결 개수가 가장 적은 서버를 선택하여 호출 하는 기법 |
 
-### 2.3 테스트
+### 2.3. 테스트
 
 생성된 Proxy Service Item 선택 > 테스트실행
 

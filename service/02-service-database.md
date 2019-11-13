@@ -1,23 +1,23 @@
 # DB Service
 
-## 1. DB Service 란
-### 1.1 정의
+## 1.. DB Service 란
+### 1.1. 정의
 기본적으로 SELECT, INSERT, UPDATE, DELETE 쿼리를 수행한다.  
 전통적인 MVC패턴의 controller 와 model 부분을 담당한다.
 
-### 1.2 구조
+### 1.2. 구조
 DB Service(쿼리)를 작성(등록)하면 Web상에 호출가능한 서비스(POST) 로 생성된다.  
 일반적으로 ajax를 통해 json을 주고받는다.
 
 ![Image Of Architecture](./images/02-service-database-01.png)
 
 ---
-## 2. 사용법
-### 2.1 생성
+## 2.. 사용법
+### 2.1. 생성
 Menu > 서비스 > DB Service > 생성  
 ![New Item](./images/02-service-database-02.png)
 
-### 2.2 속성
+### 2.2. 속성
 | 구분 | 설명 |
 |:---:|---|
 | DB 서비스 ID | 고유한 ID (중복불가 , 알파벳 숫자 , 특수문자('_')  30자이내) {host}/svc/db/{userName}/{DB서비스ID} 로 호출되어지는 서비스로 생성된다. |
@@ -29,7 +29,7 @@ Menu > 서비스 > DB Service > 생성
 | POOL 유형 | 전체(선택한 DB연결ID 하나만 사용 TRANSACTION가능): 모든 쿼리는 '4. DB연결 ID'에서 선택한 하나의 DB POOL을 사용한다. <br/> 개별(각각의 QUERY의 DB연결ID를 사용 TRANSACTION불가) : 쿼리별로 각각 DB POOL을 지정하여 사용 한다. |
 | 쿼리 생성 | [2.3 쿼리생성 참조](#23-쿼리-생성) |
 
-### 2.3 쿼리 생성
+### 2.3. 쿼리 생성
 DB 서비스 추가 창 > 생성
 실제 쿼리를 작성한다,  쿼리를 여러개 작성 할 수 있다.  
 한번의 서비스 호출로 여러개의 select결과 혹은 여러 CRUD를 실행 할 수 있다.  
@@ -49,7 +49,7 @@ Database작업은 쿼리의 실행 순서도 중요하므로 순번을 이동 �
 | 출력 Key | 쿼리 수행 후 결과값의 KEY값을 정의 한다. |
 | 쿼리 작성 | 실제 수행될 쿼리를 작성한다.<br />[입력파라미터 설명 2.3.1 쿼리 작성 참조](#231-쿼리-작성) |
 
-#### 2.3.1 쿼리 작성
+#### 2.3.1. 쿼리 작성
 - 일반변수  
 PreparedStatemnet의 ? 에 입력된다. mybatis의 #{변수명} 과 유사  
 사용법 : {'#변수명#'}  
@@ -93,13 +93,13 @@ ORDER BY {'@COL_NAME@'}           /*치환변수*/
 }
 ```
 
-### 2.4 검증
+### 2.4. 검증
 입력값에 대한 server side 검증  
 DB Service 입력 값에 대한 검증(validation)을 한다.  
 쿼리를 선택하고 '검증' 버튼을 클릭한다.  
 ![Validation](./images/02-service-database-05.png)
 
-#### 2.4.1 검증 생성/수정
+#### 2.4.1. 검증 생성/수정
 - 입력항목명
 입력항목을 선택한다. 일반변수, 치환변수의 목록이 나타난다, 세션변수는 제외  
 'query-sample001' 기준으로 NAME , COL_NAME
@@ -115,7 +115,7 @@ DB Service 입력 값에 대한 검증(validation)을 한다.
 검증실패시 client에 보내줄 에러메세지
 ![Validation Create/Edit](./images/02-service-database-06.png)
 
-### 2.5 테스트
+### 2.5. 테스트
 DB Service를 직접 실행 해보는 기능  
 쿼리의 입력변수에 맞게 'Input Json' Textarea에 json문법이 자동으로 작성된다. (값만 직접 입력해서 테스트 하면 됨)  
 클라이언트 사이드에서는 테스트의 json sample를 확인하고 입력 테스트 하고 결과값을 확인 하여 개발 하도록 한다.  
@@ -124,8 +124,8 @@ POST만 지원 하고 클라이언트 사이드에서 ajax로 호출 할 때 변
 ![Service Test](./images/02-service-database-07.png)
 
 ---
-## 3. Dynamic Query
-### 3.1 Javascript
+## 3.. Dynamic Query
+### 3.1. Javascript
 예약된 객체
 
 | 구분 | 타입 | 설명 |
@@ -134,7 +134,7 @@ POST만 지원 하고 클라이언트 사이드에서 ajax로 호출 할 때 변
 | session | Object | session 변수 담은 객체 |
 | out | StringBuilder | (append(obj),toString() 만 있음)  output 객체 |
 
-#### 3.1.1 입력변수의 유무로 조건 추가 Query
+#### 3.1.1. 입력변수의 유무로 조건 추가 Query
 
 Query
 ```sql
@@ -169,7 +169,7 @@ Input Data - TB_USER 전체가 SELECT
 }}
 ```
 
-#### 3.1.2 WHERE절 IN 생성 Query
+#### 3.1.2. WHERE절 IN 생성 Query
 
 Query
 ```sql
@@ -207,7 +207,7 @@ Input Data
 ```
 
 
-### 3.2 JAVA
+### 3.2. JAVA
 예약된 객체
 
 | 구분 | 타입 | 설명 |
@@ -216,7 +216,7 @@ Input Data
 | session | HashMap<String,String> | session 변수 담은 객체 |
 | out | StringBuilder | output 객체 |
 
-#### 3.2.1 입력변수의 유무로 조건 추가 Query
+#### 3.2.1. 입력변수의 유무로 조건 추가 Query
 
 Query
 ```sql
@@ -251,7 +251,7 @@ Input Data - TB_USER 전체가 SELECT
 }}
 ```
 
-#### 3.2.2 WHERE절 IN 생성 Query
+#### 3.2.2. WHERE절 IN 생성 Query
 
 Query
 ```sql
@@ -289,9 +289,9 @@ Input Data
 }}
 ```
 
-## 4. Tip
+## 4.. Tip
 
-### 4.1 input Key 중복사용
+### 4.1. input Key 중복사용
 DB Service는 여러개의 쿼리를 한번에 실행 할 수 있다.
 
 > 1번 쿼리: SELECT * FROM TB_USER WHERE USER_ID={'#USER_ID#'};  
@@ -321,7 +321,7 @@ input json 구조
 ```
 
 
-### 4.2 output key 를 input key로 사용
+### 4.2. output key 를 input key로 사용
 SELECT 한 값을 INSERT 나 UPDATE,DELETE 하고 싶은 경우 혹은 SELECT 한 값으로  
 다른 SELECT를 하고 싶은 경우  
 물론 같은 DB pool이면 이러한 일을 한다는 건 무의미 하다.  

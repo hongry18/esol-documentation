@@ -1,16 +1,16 @@
 # Schedule Service
-## 1. Schedule Service 란
-### 1.1 정의
+## 1.. Schedule Service 란
+### 1.1. 정의
 등록된 DB 서비스, Custom 서비스를 특정시간, 반복 실행이 필요할때 사용된다
 
 ---
-## 2. 사용법
-### 2.1 생성
+## 2.. 사용법
+### 2.1. 생성
 menu > 서비스 > Schedule Service > 생성
 
 ![Service Create](./images/02-service-schedule-01.png)
 
-### 2.2 속성
+### 2.2. 속성
 
 | 이름 | 설명 |
 |:---:|---|
@@ -26,7 +26,7 @@ menu > 서비스 > Schedule Service > 생성
 
 ![Attribute](./images/02-service-schedule-02.png)
 
-#### 2.2.1 DB Service
+#### 2.2.1. DB Service
 구분 - DB Service 선택시
 
 "DB Service" 는 platform에 등록된 DB Service를 호출하는 방식입니다.  
@@ -35,7 +35,7 @@ Schedule 서비스는 자동으로 실행되는 서비스 이므로 입력값이
 
 ![Attribute](./images/02-service-schedule-03.png)
 
-#### 2.2.2 JAVA class 파일
+#### 2.2.2. JAVA class 파일
 구분 - JAVA class 파일 선택시
 
 "Java class 파일" 은 org.quartz.Job의 interface를 사용하여 빌드해야 만 정상 작동 합니다.  
@@ -62,8 +62,8 @@ public class CronSample implements StatefulJob {
 ```
 
 ---
-## 3. 별첨
-### 3.1 Cron exp
+## 3.. 별첨
+### 3.1. Cron exp
 
 ```
 1 Seconds (0–59)

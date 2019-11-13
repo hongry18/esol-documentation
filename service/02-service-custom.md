@@ -1,17 +1,17 @@
 # Custom Service
-## 1. Custom Service 란
-### 1.1 정의
+## 1.. Custom Service 란
+### 1.1. 정의
  - DB 서비스만으로 처리가 불가능한 기능들에 대해 직접 java 코딩하여 로직을 구현한 서비스 호출을 할 수 있는 서비스다.
  - class 파일의 경로는 보통 './project/WEB-INF/classes' 이다. (변경 가능)
 
 ---
-## 2. 사용법
-### 2.1 생성
+## 2.. 사용법
+### 2.1. 생성
 menu > 서비스 > Custom Service > 생성
 
 ![Service Create](./images/02-service-custom-01.png)
 
-### 2.2 속성
+### 2.2. 속성
 
 | 이름 | 설명 |
 |:---:|---|
@@ -25,7 +25,7 @@ menu > 서비스 > Custom Service > 생성
 
 ![Attribute](./images/02-service-custom-02.png)
 
-### 2.3 테스트
+### 2.3. 테스트
 
 생성된 Custom Service Item 선택 > 테스트실행
 
@@ -38,8 +38,8 @@ menu > 서비스 > Custom Service > 생성
 ![test response](./images/02-service-custom-04.png)
 
 ---
-## 3. Custom JAVA
-### 3.1 기본 구조
+## 3.. Custom JAVA
+### 3.1. 기본 구조
 
 HttpServletRequest, HttpServletResponse, HashMap 인자값을 가진 execute 메소드가 필요하다
 
@@ -51,7 +51,7 @@ public class SampleCustom {
 }
 ```
 
-### 3.2 DB Connection 을 얻는 방법
+### 3.2. DB Connection 을 얻는 방법
 
 생성된 DB 연결 ID 를 이용해 Connection을 직접 얻어오는 방버
 
@@ -84,7 +84,7 @@ public class GetDBConnection {
 }
 ```
 
-### 3.3 DB Service 사용방법
+### 3.3. DB Service 사용방법
 
 생성된 DB Service를 사용하는 방법
 
@@ -116,7 +116,7 @@ public class UsingDBService {
 }
 ```
 
-### 3.4 SAP Service 사용방법
+### 3.4. SAP Service 사용방법
 
 생성된 SAP Service를 사용하는 방법
 

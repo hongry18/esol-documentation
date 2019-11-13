@@ -1,16 +1,16 @@
 # Memory Service
-## 1. Memory Service 란
-### 1.1 정의
+## 1.. Memory Service 란
+### 1.1. 정의
 DB 입력 없이 메모리에 데이터를 올려 빠르게 조회하는 기능
 
 ---
-## 2. 사용법
-### 2.1 생성
+## 2.. 사용법
+### 2.1. 생성
 menu > 서비스 > Memory Data > 생성
 
 ![Service Create](./images/02-service-memory-01.png)
 
-### 2.2 속성
+### 2.2. 속성
 
 | 구분 | 설명 |
 |:---:|---|
@@ -25,19 +25,19 @@ menu > 서비스 > Memory Data > 생성
 
 ![Attribute](./images/02-service-memory-02.png)
 
-#### 2.2.1 속성 DB Service
+#### 2.2.1. 속성 DB Service
 
 속성으로 DB Service(Read Only) 선택시 미리 만들어 놓은 DB Service 항목들중 선택 가능
 
 ![Attribute DB Service](./images/02-service-memory-03.png)
 
-#### 2.2.2 속성 직접입력
+#### 2.2.2. 속성 직접입력
 
 JSON Format의 문자열 입력가능
 
 ![Attribute Static data](./images/02-service-memory-04.png)
 
-### 2.3 테스트
+### 2.3. 테스트
 
 생성된 Memory Data Item 선택 > 테스트실행
 

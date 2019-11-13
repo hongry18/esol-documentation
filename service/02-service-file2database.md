@@ -1,17 +1,17 @@
 # File To Database Service
 
-## 1. File To Database Service 란
-### 1.1 정의
+## 1.. File To Database Service 란
+### 1.1. 정의
 특정 양식의 파일을 업로드하면 Database에 Table로 삽입하는 기능
 
 ---
-## 2. 사용법
-### 2.1 생성
+## 2.. 사용법
+### 2.1. 생성
 menu > 서비스 > File To Data > 생성
 
 ![Service Create](./images/02-service-file2data-01.png)
 
-### 2.2 속성
+### 2.2. 속성
 
 | 구분 | 설명 |
 |:---:|---|
@@ -24,7 +24,7 @@ menu > 서비스 > File To Data > 생성
 
 ![Attribute](./images/02-service-file2data-02.png)
 
-#### 2.2.1 Rule 생성 및 사용
+#### 2.2.1. Rule 생성 및 사용
 입력 룰을 등록한다 (rule이 복수개여도 현재일자 한개만 사용되므로 기간이 겹치면 안됨)  
 
 | 구분 | 설명 |
@@ -44,7 +44,7 @@ menu > 서비스 > File To Data > 생성
 
 ![F2D Rule](./images/02-service-file2data-03.png)
 
-#### 2.2.2 Rule에 컬럼 추가 방법
+#### 2.2.2. Rule에 컬럼 추가 방법
 
 아래 그림의 +, - 를 이용하여 컬럼 추가 제거가 가능하고  
 만들어진 아이템의 검증, 치환 설정이 가능하다
@@ -60,8 +60,8 @@ menu > 서비스 > File To Data > 생성
 
 ![F2D add Rule](./images/02-service-file2data-04.png)
 
-#### 2.2.3 컬럼 검증설정
-##### 2.2.3.1 정규식
+#### 2.2.3. 컬럼 검증설정
+##### 2.2.3.1. 정규식
 
 정규식으로 File 컬럼의 Value를 검증 합니다.
 
@@ -72,7 +72,7 @@ menu > 서비스 > File To Data > 생성
 
 ![F2D validation regex](./images/02-service-file2data-05.png)
 
-##### 2.2.3.2 일반
+##### 2.2.3.2. 일반
 
 일반적인 설정으로 File 컬럼의 Value를 검증 합니다.
 
@@ -84,7 +84,7 @@ menu > 서비스 > File To Data > 생성
 
 ![F2D validation default](./images/02-service-file2data-06.png)
 
-##### 2.2.3.3 목록
+##### 2.2.3.3. 목록
 
 등록된 목록값만 File 컬럼의 Value로 입력 됩니다.
 
@@ -97,7 +97,7 @@ menu > 서비스 > File To Data > 생성
 
 ![F2D validation list](./images/02-service-file2data-07.png)
 
-#### 2.2.3 치환 설정
+#### 2.2.3. 치환 설정
 
 등록된 목록값을 찾아 치환
 
@@ -109,7 +109,7 @@ menu > 서비스 > File To Data > 생성
 
 ![F2D replace](./images/02-service-file2data-08.png)
 
-### 2.3 테스트
+### 2.3. 테스트
 
 * Database에 입력할 대상 Table 생성
 * 입력할 Table 구조에 맞는 데이터 생성

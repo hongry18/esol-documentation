@@ -1,18 +1,18 @@
 # File Service
 
-## 1. File Service 란
-### 1.1 정의
+## 1.. File Service 란
+### 1.1. 정의
 File 업로드 서비스
 
 ---
-## 2. 사용법
-### 2.1 생성
+## 2.. 사용법
+### 2.1. 생성
 
 Menu > 서비스 > File Service > 생성
 
 ![Service Create](./images/02-service-file-01.png)
 
-### 2.2 속성
+### 2.2. 속성
 
 | 구분 | 설명 |
 |:---:|---|
@@ -27,8 +27,8 @@ Menu > 서비스 > File Service > 생성
 
 ![File Upload Attribute](./images/02-service-file-02.png)
 
-#### 2.2.1 File Upload 검증 설정
-##### 2.2.1.1 속성
+#### 2.2.1. File Upload 검증 설정
+##### 2.2.1.1. 속성
 
 | 구분 | 설명 |
 |:---:|---|
@@ -38,7 +38,7 @@ Menu > 서비스 > File Service > 생성
 | File 유형 검증 | 선택에 따라 file 확장자와 File Signature 검증 |
 | 추가 옵션 | zip file upload 후 압축보관, 압축해제보관 (압축해제 보관시 암호걸려있으면 불가능) |
 
-### 2.3 테스트
+### 2.3. 테스트
 
 생성된 File Service Item 선택 > 테스트실행
 
