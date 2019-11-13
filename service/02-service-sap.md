@@ -17,7 +17,7 @@ menu > 서비스 > SAP Service > 생성
 | SAP 서비스 ID | 고유한 ID(중복 불가, 영어 숫자 underscore('_') 5자 이상 50자 이내<br />{host}/svc/sap/{userName}{SAP 서비스ID} 로 호출되어지는 서비스로 생성된다 |
 | SAP 서비스명 | 이름, 혹은 설명입력, 작업자가 구분하기 위해 사용 |
 | 그룹 | 작업자가 구분하기 위해 사용 |
-| SAP 연결 ID | SAP서비스에서 기본적으로 사용할 SAP POOl(connection) menu > 연결정보 > SAP연결 에서 생성된 pool |
+| SAP 연결 ID | SAP서비스에서 기본적으로 사용할 SAP POOl(connection) menu > 연결정보 > SAP연결 에서 생성된 pool [SAP POOL 생성 방법 참조](/connection-information/01-connection-information-sap.md) |
 | 상태 | 서비스 사용 상태 구분, 활성 / 비활성 선택하여 사용 선택가능 |
 | 인증체크 | 발급된 Token을 사용하여 서비스 사용시 인증 체크 사용 여부 |
 | RFC(Function) | 검색한 함수를 선택하면 자동기입 |

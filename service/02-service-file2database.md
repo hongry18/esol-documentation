@@ -33,7 +33,7 @@ menu > 서비스 > File To Data > 생성
 | FileType | Upload file Type(excel, txt...) |
 | 컬럼 구분자 | 데이터간 구분 문자 |
 | 컬럼수 | 아래 컬럼 등록을 하게 되면 자동으로 변경 |
-| DB 연결 ID | Menu > 연결정보 > DB연결에서 생성한 DB 연결 ID 선택 |
+| DB 연결 ID | Menu > 연결정보 > DB연결에서 생성한 DB 연결 ID 선택 [DB POOL 생성 방법 참조](/connection-information/01-connection-information-database.md) |
 | DB Catalog | DBMS 별 선택옵션이 달라짐 |
 | DB Schema | DBMS 별 선택옵션이 달라짐 |
 | Table 명 | 업로드 파일을 입력할 테이블명 |

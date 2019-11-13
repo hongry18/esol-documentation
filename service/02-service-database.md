@@ -23,7 +23,7 @@ Menu > 서비스 > DB Service > 생성
 | DB 서비스 ID | 고유한 ID (중복불가 , 알파벳 숫자 , 특수문자('_')  30자이내) {host}/svc/db/{userName}/{DB서비스ID} 로 호출되어지는 서비스로 생성된다. |
 | DB 서비스명 | 이름, 혹은 설명을 입력, 작업자가 구분하기 위해 사용 |
 | 그룹 | 작업자가 구분하기 위해 사용 |
-| DB 연결 ID | DB서비스에서 기본적으로 사용할 DB POOl(connection) menu > 연결정보 > DB연결 에서 생성된 pool |
+| DB 연결 ID | DB서비스에서 기본적으로 사용할 DB POOl(connection) menu > 연결정보 > DB연결 에서 생성된 pool [DB POOL 생성 방법 참조](/connection-information/01-connection-information-database.md) |
 | 상태 | 활성/비활성, 비활성일 경우 서비스가 제한된다. |
 | 인증체크 | 사용/미사용, 미사용이면 누구나 사용 가능 하고, 발급된 Token이 유효한 경우나 로그인 세션이 있는 경우만 사용 할지를 정의한다.  |
 | POOL 유형 | 전체(선택한 DB연결ID 하나만 사용 TRANSACTION가능): 모든 쿼리는 '4. DB연결 ID'에서 선택한 하나의 DB POOL을 사용한다. <br/> 개별(각각의 QUERY의 DB연결ID를 사용 TRANSACTION불가) : 쿼리별로 각각 DB POOL을 지정하여 사용 한다. |
