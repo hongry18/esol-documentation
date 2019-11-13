@@ -2,16 +2,41 @@
 ## 1. Custom Service 란
 ### 1.1. 정의
  - DB 서비스만으로 처리가 불가능한 기능들에 대해 직접 java 코딩하여 로직을 구현한 서비스 호출을 할 수 있는 서비스다.
- - class 파일의 경로는 보통 './project/WEB-INF/classes' 이다. (변경 가능)
+ - application 환경설정 파일의 설정에 따라 웹에서 코딩을 하여 사용하거나 직접 업로드 사용을 할 수 있다
+ - 직접 업로드시 class 파일의 경로는 보통 './project/WEB-INF/classes' 이다. (변경 가능)
 
 ---
 ## 2. 사용법
+
 ### 2.1. 생성
 menu > 서비스 > Custom Service > 생성
 
 ![Service Create](./images/02-service-custom-01.png)
 
-### 2.2. 속성
+#### 2.1.1. 웹 코딩
+
+![Service Create](./images/02-service-custom-05.png)
+
+##### 2.1.1.1. 속성
+| 이름 | 설명 |
+|:---:|---|
+| Custom 서비스 ID | 고유한 ID(중복 불가, 영어 숫자 underscore('_') 5자 이상 50자 이내<br />{host}/svc/cs/{userName}{Proxy서비스ID} 로 호출되어지는 서비스로 생성된다 |
+| Custom 서비스명 | 이름, 혹은 설명입력, 작업자가 구분하기 위해 사용 |
+| 그룹 | 작업자가 구분하기 위해 사용 |
+| 상태 | 서비스 사용 상태 구분, 활성 / 비활성 선택하여 사용 선택가능 |
+
+##### 2.1.1.2. Java Edit Helper
+| 이름 | 설명 |
+|:---:|---|
+| Java Sample Code | sample 목록중 선택하면 해당 항목의 견본이 우축 Java editor에 입력된 |
+| Referenced Libraries | 사용가능한 library 목록 |
+
+##### 2.1.1.3. java editor
+`package #PACKAGE#;`, `public class #CLASSNAME#` 이부분은 절대 지우거나 변경하면 안돼요
+
+
+#### 2.1.2. class 파일 직접 업로드
+##### 2.1.2.1. 속성
 
 | 이름 | 설명 |
 |:---:|---|
