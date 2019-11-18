@@ -10,8 +10,8 @@ DB Service, Schedule Service 등 서비스에서 사용될 DBMS 연결 정보 �
 - [x] MYSql
 - [x] MariaDB
 - [x] SQLIte
-- [ ] PostgreSQL
-- [ ] CUBRID
+- [x] PostgreSQL
+- [x] CUBRID
 
 ## 2. 사용법
 ### 2.1. 생성
